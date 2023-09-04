@@ -9,7 +9,40 @@
   <body>
     <div class="container">
       <div class="weather-app">
-        <form class="search-form" id="search-form"></form>
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                class="form-control"
+                id="city-input"
+                placeholder="Type a city"
+              />
+            </div>
+            <div class="col-1">
+              <button
+                type="submit"
+                class="btn btn-outline-light border-0"
+                id="search-form"
+              >
+                🔍
+              </button>
+            </div>
+            <div class="col-2">
+              <button
+                type="submit"
+                class="btn btn-outline-dark border-0"
+                id="current-location-button"
+              >
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/455/original/location-indicator.168x256.png?1693645227"
+                  alt="current location logo"
+                  width="15px"
+                />
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
     <script src="src/index.js"></script>
