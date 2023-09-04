@@ -8,6 +8,18 @@ body {
   background-size: cover;
 }
 
+footer {
+  text-align: center;
+  margin-top: 0;
+  color: #202020;
+  font-family: "Lora", serif;
+  font-size: smaller;
+}
+
+footer a {
+  text-decoration: none;
+}
+
 .container {
   font-family: "Martel Sans", sans-serif;
 }
