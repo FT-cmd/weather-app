@@ -74,10 +74,10 @@ footer a {
   font-size: x-small;
 }
 
-.col-6.float-right {
+.col-6.right {
   margin-left: 28px;
 }
-.col-5.float-left {
+.col-5.left {
   padding-left: 50px;
   padding-right: 0;
 }
