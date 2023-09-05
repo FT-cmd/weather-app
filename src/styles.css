@@ -43,6 +43,7 @@ footer a {
   color: #34373b;
   margin: 0;
   margin-left: 20px;
+  text-transform: capitalize;
 }
 
 .weather-app ul {
