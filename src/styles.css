@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/094/856/original/812994.jpg?1693149606");
+  /*background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/094/856/original/812994.jpg?1693149606");*/
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -26,12 +26,15 @@ footer a {
 
 .weather-app {
   border: none;
-  box-shadow: #424547;
   padding: 15px;
   margin: 20px auto;
   border-radius: 20px;
   max-width: 600px;
-  background: radial-gradient(592px at 48.2% 50%, #d3d3d5 0%, #6093b7 74.6%);
+  background: radial-gradient(
+    592px at 48.2% 50%,
+    rgba(138, 138, 138, 0.274) 0%,
+    #216aca4b 74.6%
+  );
   margin-bottom: 5px;
 }
 
@@ -85,4 +88,16 @@ footer a {
 
 ul.current-weather {
   margin-left: 28px;
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
