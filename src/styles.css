@@ -3,7 +3,6 @@ html {
 }
 
 body {
-  /*background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/094/856/original/812994.jpg?1693149606");*/
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -30,11 +29,7 @@ footer a {
   margin: 20px auto;
   border-radius: 20px;
   max-width: 600px;
-  background: radial-gradient(
-    592px at 48.2% 50%,
-    rgba(138, 138, 138, 0.274) 0%,
-    #216aca4b 74.6%
-  );
+  background: rgba(0, 0, 0, 0.113);
   margin-bottom: 5px;
 }
 
