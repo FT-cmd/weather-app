@@ -29,7 +29,7 @@ footer a {
   margin: 20px auto;
   border-radius: 20px;
   max-width: 600px;
-  background: rgba(0, 0, 0, 0.113);
+  background: rgba(245, 240, 240, 0.548);
   margin-bottom: 5px;
 }
 
@@ -53,7 +53,7 @@ footer a {
 
 .weather-app li {
   list-style: none;
-  color: #ffffff;
+  color: #72787c;
   font-size: 16px;
   line-height: 20px;
 }
@@ -103,6 +103,21 @@ ul.current-weather {
 .search-bar {
   position: relative;
   left: 15px;
+}
+
+.weather-forecast {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  color: rgb(66, 69, 71);
+  font-family: "Playfair Display", serif;
+}
+
+.weather-forecast-temperature {
+  color: #72787c;
 }
 
 #background-video {
