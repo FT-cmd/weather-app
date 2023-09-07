@@ -34,10 +34,8 @@ footer a {
 }
 
 .weather-app h1 {
-  font-family: "Lora", serif;
-  font-size: 45px;
-  font-weight: 700;
-  font-style: italic;
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
   color: #34373b;
   margin: 0;
   margin-left: 20px;
