@@ -118,10 +118,11 @@ ul.current-weather {
   color: #72787c;
 }
 
-.col-2.day-forecast:hover {
-  background-color: #f8f9fa;
+.day-forecast:hover {
+  background-color: #ffffffd8;
   cursor: pointer;
   border-radius: 0.375rem;
+  transform: scale(1.1);
 }
 .weather-forecast-temperatures {
   color: #72787c;
