@@ -123,6 +123,16 @@ ul.current-weather {
   cursor: pointer;
   border-radius: 0.375rem;
 }
+.weather-forecast-temperatures {
+  color: #72787c;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.weather-forecast-temperature-max {
+  color: #51565a;
+  font-size: 17px;
+}
 
 #background-video {
   width: 100vw;
