@@ -99,6 +99,11 @@ function displayTemperature(response) {
   getForecast(response.data.coord);
 }
 
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+
 function search(city) {
   let apiKey = "99b8f9330a1bfba3a85e523fd3c2e528";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -111,10 +116,29 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-function getCurrentLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(searchLocation);
+function changeTheme() {
+  let body = document.querySelector("body");
+  // body.classList.toggle("dark");
+  if (body.classList.contains("dark")) {
+    body.classList.remove("dark");
+    videoElement.setAttribute("src", "media/coverr-cloudy-sky-2765-1080p.mp4");
+    themeIconElement.setAttribute(
+      "src",
+      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/249/original/icons8-sun-48.png?1694184241"
+    );
+  } else {
+    body.classList.add("dark");
+    videoElement.setAttribute("src", "media/video (1080p).mp4");
+    themeIconElement.setAttribute(
+      "src",
+      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/259/original/icons8-moon-48.png?1694185592"
+    );
+  }
 }
+let videoElement = document.querySelector("#background-video");
+let themeIconElement = document.querySelector("#theme-icon");
+let themeButton = document.querySelector(".theme-button");
+themeButton.addEventListener("click", changeTheme);
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
